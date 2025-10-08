@@ -31,27 +31,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
-        };
-
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
             key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
         };
     };
 
@@ -82,19 +62,17 @@
             bindings = <
 &kp Q            &kp W         &kp E             &kp R                 &kp T                                        &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A            &kp S         &kp D             &kp F                 &kp G      &kp LS(LG(S))      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp ENTER
-&kp Z            &kp X         &kp C             &kp V                 &kp B      &kp MINUS          &kp TILDE      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp Z            &kp X         &kp C             &kp V                 &kp B      &kp MINUS          &kp TILDE      &kp N        &kp M  &kp COMMA  &kp DOT  &lt 6 SLASH
 &mt LCTRL LANG2  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT SPACE  &lt 2 TAB  &lt 4 ESC          &kp BACKSPACE  &lt 1 ENTER                             &lt 1 LANG1
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION {
             bindings = <
-&kp PAGE_UP    &kp AMPERSAND    &kp ASTERISK  &kp EXCLAMATION  &kp QUESTION                           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UP_ARROW    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp END        &kp DOLLAR       &kp PERCENT   &kp LCTRL        &kp DELETE    &trans        &trans     &kp BACKSPACE         &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW   &mo 5
-&kp PAGE_DOWN  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp EQUAL     &kp PLUS      &kp MINUS  &mkp MB4              &mkp MB1               &mkp MB2        &mkp MB5          &trans
-&trans         &trans           &trans        &trans           &trans        &trans        &trans     &trans                                                                         &trans
+&kp PAGE_UP    &kp AMPERSAND    &kp ASTERISK  &kp EXCLAMATION  &kp QUESTION                                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UP_ARROW    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp END        &kp DOLLAR       &kp PERCENT   &kp LCTRL        &kp DELETE    &kp COLON      &kp SEMICOLON  &kp BACKSPACE         &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW   &mo 5
+&kp PAGE_DOWN  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp EQUAL     &kp PLUS       &kp MINUS      &mkp MB4              &mkp MB1               &mkp MB2        &mkp MB5          &trans
+&trans         &trans           &trans        &trans           &trans        &trans         &trans         &trans                                                                         &trans
             >;
         };
 
@@ -138,10 +116,10 @@
 
         layer_6 {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &trans        &trans        &trans             &trans                                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans        &trans        &kp LS(LA(LC(R)))  &trans  &kp LG(LC(Q))      &trans       &trans        &trans        &trans        &trans        &trans
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3       &trans  &trans             &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans        &trans        &trans             &trans  &trans             &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
     };
