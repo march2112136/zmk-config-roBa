@@ -31,7 +31,27 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 10>;
+            key-positions = <0 1>;
+        };
+
+        Copy {
+            bindings = <&kp LG(C)>;
+            key-positions = <10 11>;
+        };
+
+        Paste {
+            bindings = <&kp LG(V)>;
+            key-positions = <12 13>;
+        };
+
+        Cut {
+            bindings = <&kp LG(X)>;
+            key-positions = <11 12>;
+        };
+
+        allselect {
+            bindings = <&kp LG(A)>;
+            key-positions = <22 23>;
         };
     };
 
@@ -60,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q            &kp W         &kp E             &kp R                 &kp T                                          &kp Y                  &kp U  &lt 5 I    &kp O    &kp P
-&kp A            &kp S         &kp D             &kp F                 &kp G      &kp LS(LG(S))      &kp MINUS        &kp H                  &kp J  &kp K      &kp L    &kp ENTER
-&kp Z            &kp X         &kp C             &kp V                 &kp B      &kp MINUS          &kp TILDE        &kp N                  &kp M  &kp COMMA  &kp DOT  &lt 6 SLASH
-&mt LCTRL LANG2  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT SPACE  &lt 2 TAB  &lt 4 ESC          &lt 3 BACKSPACE  &mt RIGHT_SHIFT ENTER                             &lt 1 LANG1
+&kp Q            &kp W         &kp E             &kp R                 &kp T                                               &kp Y                  &kp U  &lt 5 I    &kp O    &kp P
+&kp A            &kp S         &kp D             &kp F                 &kp G      &kp LC(UP_ARROW)        &kp MINUS        &kp H                  &kp J  &kp K      &kp L    &kp ENTER
+&kp Z            &kp X         &kp C             &kp V                 &kp B      &kp LC(DOWN_ARROW)      &kp TILDE        &kp N                  &kp M  &kp COMMA  &kp DOT  &lt 6 SLASH
+&mt LCTRL LANG2  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT SPACE  &lt 2 TAB  &lt 4 ESC               &lt 3 BACKSPACE  &mt RIGHT_SHIFT ENTER                             &lt 1 LANG1
             >;
         };
 
@@ -78,10 +98,10 @@
 
         NUM {
             bindings = <
-&kp PAGE_UP    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0                                            &kp F7  &kp F8  &kp F9  &kp F12  &kp RIGHT_PARENTHESIS
-&kp ENTER      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp LC(LA(ASTERISK))      &kp UNDERSCORE  &kp F4  &kp F5  &kp F6  &kp F11  &kp PERCENT
-&kp PAGE_DOWN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS     &kp SLASH                 &kp EQUAL       &kp F1  &kp F2  &kp F3  &kp F10  &kp BACKSLASH
-&trans         &trans        &trans        &trans        &trans        &trans                    &trans          &trans                           &kp PIPE
+&kp PAGE_UP    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0                                    &kp F7  &kp F8  &kp F9  &kp F12  &kp RIGHT_PARENTHESIS
+&kp ENTER      &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS      &kp ASTERISK      &kp UNDERSCORE  &kp F4  &kp F5  &kp F6  &kp F11  &kp PERCENT
+&kp PAGE_DOWN  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS     &kp SLASH         &kp EQUAL       &kp F1  &kp F2  &kp F3  &kp F10  &kp BACKSLASH
+&trans         &trans        &trans        &trans        &trans        &trans            &trans          &trans                           &kp PIPE
             >;
         };
 
