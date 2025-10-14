@@ -53,6 +53,16 @@
             bindings = <&kp LG(A)>;
             key-positions = <22 23>;
         };
+
+        NewTab {
+            bindings = <&kp LG(T)>;
+            key-positions = <4 3>;
+        };
+
+        DeleteTab {
+            bindings = <&kp LG(W)>;
+            key-positions = <1 2>;
+        };
     };
 
     macros {
