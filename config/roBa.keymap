@@ -51,7 +51,7 @@
 
         allselect {
             bindings = <&kp LG(A)>;
-            key-positions = <22 23>;
+            key-positions = <22 10>;
         };
 
         NewTab {
@@ -62,6 +62,31 @@
         DeleteTab {
             bindings = <&kp LG(W)>;
             key-positions = <1 2>;
+        };
+
+        Redo {
+            bindings = <&kp LG(Z)>;
+            key-positions = <22 23>;
+        };
+
+        pageback {
+            bindings = <&kp LG(LEFT_BRACKET)>;
+            key-positions = <8 7>;
+        };
+
+        pageforward {
+            bindings = <&kp LG(RIGHT_BRACKET)>;
+            key-positions = <8 9>;
+        };
+
+        pagebackchrome {
+            bindings = <&kp LG(LEFT_ARROW)>;
+            key-positions = <5 6>;
+        };
+
+        pageforwardchrome {
+            bindings = <&kp LG(RIGHT_ARROW)>;
+            key-positions = <6 7>;
         };
     };
 
