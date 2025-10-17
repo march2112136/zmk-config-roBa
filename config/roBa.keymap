@@ -91,17 +91,17 @@
         default_layer {
             bindings = <
 &kp Q            &kp W         &kp E             &kp R                 &kp T                                               &kp Y                  &kp U  &lt 5 I    &kp O    &kp P
-&kp A            &kp S         &kp D             &kp F                 &kp G      &kp LC(UP_ARROW)        &kp MINUS        &kp H                  &kp J  &kp K      &kp L    &kp ENTER
+&kp A            &kp S         &kp D             &kp F                 &kp G      &kp LC(UP_ARROW)        &kp MINUS        &kp H                  &kp J  &kp K      &kp L    &lt 1 ENTER
 &kp Z            &kp X         &kp C             &kp V                 &kp B      &kp LC(DOWN_ARROW)      &kp TILDE        &kp N                  &kp M  &kp COMMA  &kp DOT  &lt 6 SLASH
-&mt LCTRL LANG2  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT SPACE  &lt 2 TAB  &lt 4 ESC               &lt 3 BACKSPACE  &mt RIGHT_SHIFT ENTER                             &lt 1 LANG1
+&mt LCTRL LANG2  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT SPACE  &lt 2 TAB  &lt 4 ESC               &lt 3 BACKSPACE  &mt RIGHT_SHIFT ENTER                             &lt 5 LANG1
             >;
         };
 
         FUNCTION {
             bindings = <
 &kp PAGE_UP    &kp AMPERSAND    &kp ASTERISK  &kp EXCLAMATION  &kp QUESTION                                &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UP_ARROW    &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&kp END        &kp DOLLAR       &kp PERCENT   &kp LCTRL        &kp DELETE    &kp COLON      &kp SEMICOLON  &kp BACKSPACE         &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW   &mo 5
-&kp PAGE_DOWN  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp EQUAL     &kp PLUS       &kp MINUS      &mkp MB4              &mkp MB1               &mkp MB2        &mkp MB5          &trans
+&kp END        &kp DOLLAR       &kp PERCENT   &kp LCTRL        &kp DELETE    &kp COLON      &kp SEMICOLON  &kp BACKSPACE         &kp LEFT_ARROW         &kp DOWN_ARROW  &kp RIGHT_ARROW   &trans
+&kp PAGE_DOWN  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp EQUAL     &kp PLUS       &kp MINUS      &mkp MB4              &mkp MB1               &mkp MB2        &mkp MB5          &to 5
 &trans         &trans           &trans        &trans           &trans        &trans         &trans         &trans                                                                         &trans
             >;
         };
