@@ -88,6 +88,11 @@
             bindings = <&kp LG(RIGHT_ARROW)>;
             key-positions = <6 7>;
         };
+
+        reload {
+            bindings = <&kp LG(R)>;
+            key-positions = <3 2>;
+        };
     };
 
     macros {
