@@ -139,6 +139,8 @@
 &kp PAGE_DOWN  &kp EXCLAMATION  &kp AT_SIGN   &kp HASH         &kp EQUAL     &kp PLUS       &kp DOUBLE_QUOTES  &mkp MB4              &mkp MB1               &mkp MB2        &mkp MB5          &trans
 &trans         &trans           &trans        &trans           &trans        &trans         &trans             &trans                                                                         &mo 5
             >;
+
+            sensor-bindings = <&inc_dec_kp 0 0>;
         };
 
         NUM {
