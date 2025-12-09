@@ -93,6 +93,11 @@
             bindings = <&kp LG(R)>;
             key-positions = <3 2>;
         };
+
+        duplicate {
+            bindings = <&kp LG(D)>;
+            key-positions = <12 24>;
+        };
     };
 
     macros {
