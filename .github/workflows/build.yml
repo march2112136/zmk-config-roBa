@@ -1,3 +1,5 @@
+name: Build ZMK firmware
+
 on:
   push:
   pull_request:
@@ -5,4 +7,20 @@ on:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.1
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Install dependencies
+        uses: zmkfirmware/zmk-setup@v1
+
+      - name: Build (default)
+        run: |
+          west build -s zmk/app -b nice_nano_v2 -- -DZMK_CONFIG=${{ github.workspace }}/config
+
+      - name: Upload firmware
+        uses: actions/upload-artifact@v3
+        with:
+          name: firmware
+          path: build/zephyr/*.uf2
