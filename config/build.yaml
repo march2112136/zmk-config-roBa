@@ -1,0 +1,5 @@
+build:
+  - board: seeeduino_xiao_ble
+    shield: roba_r
+  - board: seeeduino_xiao_ble
+    shield: roba_l
