@@ -1,15 +1,14 @@
-menu "roBa shields"
-
-config SHIELD_ROBA_L
-    bool "roBa_L"
-    select ZMK_KEYBOARD
+config SHIELD_ROBA
+    bool "roBa shield"
     help
-      Left half of the roBa split keyboard.
+      Parent config for roBa keyboard shields.
 
 config SHIELD_ROBA_R
-    bool "roBa_R"
-    select ZMK_KEYBOARD
-    help
-      Right half of the roBa split keyboard.
+    bool "roBa Right"
+    select SHIELD_ROBA
+    default y if SHIELD_LIST_CONTAINS_roBa_R
 
-endmenu
+config SHIELD_ROBA_L
+    bool "roBa Left"
+    select SHIELD_ROBA
+    default y if SHIELD_LIST_CONTAINS_roBa_L
