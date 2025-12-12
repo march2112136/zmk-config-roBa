@@ -1,5 +1,5 @@
 file_format: "1"
 id: roba_r
-name: roba_r
+name: roba Right
 type: shield
 requires: [seeeduino_xiao_ble]
