@@ -1,14 +1,14 @@
-config SHIELD_ROBA
-    bool "roBa shield"
+config SHIELD_roba
+    bool "roba shield"
     help
-      Parent config for roBa keyboard shields.
+      Parent config for roba keyboard shields.
 
-config SHIELD_ROBA_R
-    bool "roBa Right"
-    select SHIELD_ROBA
-    default y if SHIELD_LIST_CONTAINS_roBa_R
+config SHIELD_roba_R
+    bool "roba Right"
+    select SHIELD_roba
+    default y if SHIELD_LIST_CONTAINS_roba_R
 
-config SHIELD_ROBA_L
-    bool "roBa Left"
-    select SHIELD_ROBA
-    default y if SHIELD_LIST_CONTAINS_roBa_L
+config SHIELD_roba_L
+    bool "roba Left"
+    select SHIELD_roba
+    default y if SHIELD_LIST_CONTAINS_roba_L
