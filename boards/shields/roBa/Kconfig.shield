@@ -1,5 +1,15 @@
-config SHIELD_ROBA_R
-    def_bool $(shields_list_contains,roBa_R)
+menu "roBa shields"
 
 config SHIELD_ROBA_L
-    def_bool $(shields_list_contains,roBa_L)
+    bool "roBa_L"
+    select ZMK_KEYBOARD
+    help
+      Left half of the roBa split keyboard.
+
+config SHIELD_ROBA_R
+    bool "roBa_R"
+    select ZMK_KEYBOARD
+    help
+      Right half of the roBa split keyboard.
+
+endmenu
