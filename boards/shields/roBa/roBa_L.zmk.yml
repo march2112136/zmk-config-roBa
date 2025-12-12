@@ -1,0 +1,5 @@
+file_format: "1"
+id: roBa_L
+name: roBa Left
+type: shield
+requires: [seeeduino_xiao_ble]
