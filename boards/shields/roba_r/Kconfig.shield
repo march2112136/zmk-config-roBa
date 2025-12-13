@@ -1,2 +1,2 @@
-config SHIELD_roBA_R
+config SHIELD_roba_r
     bool "roba Right"
