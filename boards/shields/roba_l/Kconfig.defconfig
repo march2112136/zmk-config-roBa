@@ -1,4 +1,4 @@
-if SHIELD_ROBA_L
+if SHIELD_roba_l
 
 config ZMK_KEYBOARD_NAME
     default "roba_l"
