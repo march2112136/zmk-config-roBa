@@ -1,0 +1,9 @@
+if SHIELD_ROBA_L
+
+config ZMK_KEYBOARD_NAME
+    default "roba_l"
+
+config ZMK_SPLIT
+    default y
+
+endif
