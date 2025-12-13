@@ -1,7 +1,7 @@
-if SHIELD_ROBA_R
+if SHIELD_roba_r
 
 config ZMK_KEYBOARD_NAME
-    default "roBa_R"
+    default "roba_r"
 
 config ZMK_SPLIT
     default y
