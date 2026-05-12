@@ -177,5 +177,14 @@
 &trans  &trans        &trans        &trans             &trans  &trans             &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
+
+        layer_7 {
+            bindings = <
+&kp Q            &kp W         &kp E             &kp R                 &kp T                                               &kp Y                  &kp U  &lt 5 I    &kp O    &kp P
+&kp A            &kp S         &kp D             &kp F                 &kp G      &kp LC(UP_ARROW)        &kp MINUS        &kp H                  &kp J  &kp K      &kp L    &lt 6 ENTER
+&kp Z            &kp X         &kp C             &kp V                 &kp B      &kp LC(DOWN_ARROW)      &kp TILDE        &kp N                  &kp M  &kp COMMA  &kp DOT  &lt 1 SLASH
+&mt LCTRL LANG2  &kp LEFT_ALT  &kp LEFT_COMMAND  &mt LEFT_SHIFT SPACE  &lt 2 TAB  &lt 4 ESC               &lt 3 BACKSPACE  &mt RIGHT_SHIFT ENTER                             &lt 5 LANG1
+            >;
+        };
     };
 };
